@@ -239,7 +239,7 @@ body {
     height: 20%;
     display: block;
     flex: auto;
-    background-color: aliceblue;
+    background-color: rgb(221, 235, 247);
     border: 5px solid ;
     border-radius: 30px;
     border-color: rgb(245, 155, 122);
