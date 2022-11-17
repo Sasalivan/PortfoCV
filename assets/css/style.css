@@ -9,11 +9,6 @@
 }
 
 @font-face {
-    font-family: "Bad Comic Regular";
-    src: url(../fonts/BadComic-Regular.ttf);
-}
-
-@font-face {
     font-family: "Sun";
     src: url(../fonts/Sunbird\ DEMO.otf);
 }
@@ -24,55 +19,23 @@
 }
 
 @font-face {
-    font-family: "Strawberry";
-    src: url(../fonts/Stanberry.ttf);
-}
-
-@font-face {
     font-family: "anime";
     src: url(../fonts/animeace2bb_tt/animeace2_reg.ttf);
 }
 
-@font-face {
-    font-family: "IHAT";
-    src: url(../fonts/IHATCS__.TTF);
-}
-
-@font-face {
-    font-family:"chicken" ;
-    src: url(../fonts/PinkChicken-Regular.ttf);
-}
-
-@font-face {
-    font-family: "futur";
-    src: url(../fonts/FuturaHandwritten.ttf);
-}
-
-@font-face {
-    font-family: "action";
-    src: url(../fonts/actionman/Action\ Man.ttf);
-}
-
-@font-face {
-    font-family: "actionman";
-    src: url(../fonts/actionman/Action\ Man\ Bold.ttf);
-}
-
-@font-face {
-    font-family: "comicbla";
-    src: url(../fonts/ComicNeueSansID.ttf);
-}
 
 *{
     box-sizing: border-box;
 }
 
-
 html{
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth; 
 }
 
+div .conteneur{
+    width: 1903px;
+    height: 900px;
+}
 
 header{
     width: 100%;
@@ -83,26 +46,19 @@ header{
     position: sticky;
     top: 0;
     padding: 10px ;
+    z-index:1;
 }
-
-
 header nav{
-    float: right;
-    
+    float: right; 
 }
-
 header ul{
     list-style-type: none;
     float: left;
     overflow: hidden;
-
 }
-
 header li {
     float: left;
 }
-
-
 header li a {
     display: block;
     padding: 15px 15px;
@@ -111,17 +67,21 @@ header li a {
     color: orange;
     font-family: "anime";
     font-size: 1.3rem;
-
 }
+
+
 
 body {
     background-image:url("../images/backgroundd200.jpg");
 }
+
+
 #accueil{
     width: auto;
-    height: 770px;
+    height: 900px;
+    padding-bottom: 10%;
+    border-bottom: 2px dashed;
 }
-
 #accueil .Slogan{
     
     float: left;
@@ -129,14 +89,12 @@ body {
     margin-left: 20%;
     margin-top: 10%;
 }
-
 #accueil .Slogan h1{
     font-family: "Cartoon Toy Turbo Bold";
     font-size: 5rem;
     text-align: center;
     display: inline;;
 }
-
 #accueil .Slogan h2{
     font-family: "Cartoon Toy Turbo";
     font-size: 3rem;
@@ -158,50 +116,42 @@ body {
 
 
 .Title{
-    width: auto;
-    height: auto;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-right: 5%;
     text-align: center;
 }
-
 .Title h3{
     font-family: "coyote";
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.5rem;
-    
+    letter-spacing: 0.5rem;  
 }
 
 #presenta{
-    width: 100%;
-    height: 100%;
+    width: 1903px;
+    height: 900px;
     padding-top: 10%;
     padding-bottom: 10%;
-    display: flex;
     border-bottom: 2px dashed;
 }
 
-#presenta .Title{
-    flex: none;
+#presenta .pres2{
+    width: auto;
+    height: auto;
 }
 
-#presenta .Text{
-    width: 20%;
-    height: 20%;
-    display: block;
-    flex: 1 1 auto;
-    float: right;
+#presenta .pres2 .Text{
+    width: 900px;
     background-color: aliceblue;
     border: 5px solid ;
     border-radius: 30px;
     border-color: rgb(245, 155, 122);
     padding: 5%;
+    margin: -420px 0px 0px 501px;
 }
-
 #presenta .Text p{
     text-align: center;
     font-family: "Sun";
@@ -212,43 +162,112 @@ body {
     line-height: 2em;
 }
 
+#presenta img{
+    width: 30%;
+    border: 5px solid;
+    border-radius: 30px;
+    border-color: rgb(245, 155, 122);
+    align-self: end;
+    float: right;
+    margin-right: -150px;
+    rotate: 20deg;
+}
+
+
+
+
 #compet{
     width: 100%;
     height: 100%;
     padding-top: 10%;
     padding-bottom: 10%;
-    display: flex;
     border-bottom: 2px dashed;
+    display: flex;
 }
-
-#compet .Title{
-    flex: none;
-}
-
 #compet .Back{
     flex: 1 1 auto;
+    margin-right: 80px;
+    margin-left: 80px;
+    align-self: start;
 }
-
 #compet .Back img{
-    width: 10%;
-    height: 30%;
-    
+    max-width: 40%
 }
-#compet .BackText{
-    width: 20%;
-    height: 20%;
+#compet .backText {
+    width: 50%;
+    height: 50%;
     display: block;
-    flex: auto;
     background-color: rgb(221, 235, 247);
     border: 5px solid ;
     border-radius: 30px;
     border-color: rgb(245, 155, 122);
-    padding: 5%;
+    padding: 10%;
 }
-
-
-
-
+#compet .front{
+    flex: 1 1 auto;
+    margin-right: 80px;
+    align-self: end;
+}
+#compet .front img{
+    max-width: 40%;
+}
+#compet .frontText {
+    width: 50%;
+    height: 50%;
+    display: block;
+    background-color: rgb(221, 235, 247);
+    border: 5px solid ;
+    border-radius: 30px;
+    border-color: rgb(245, 155, 122);
+    padding: 10%;
+    /* flex: 1 1 0; */
+}
+#compet .design{
+    flex: 1 1 auto;
+    margin-right: 80px;
+}
+#compet .design img{
+    max-width: 40%;
+}
+#compet .designText {
+    width: 50%;
+    height: 50%;
+    display: block;
+    background-color: rgb(221, 235, 247);
+    border: 5px solid ;
+    border-radius: 30px;
+    border-color: rgb(245, 155, 122);
+    padding: 10%;
+    /* flex: 1 1 0; */
+}
+#compet .autre{
+    flex: 1 1 auto;
+    margin-right: 30px;
+    align-self: end;
+}
+#compet .autre img{
+    max-width: 40%;
+}
+#compet .autreText {
+    width: 50%;
+    height: 50%;
+    display: block;
+    background-color: rgb(221, 235, 247);
+    border: 5px solid ;
+    border-radius: 30px;
+    border-color: rgb(245, 155, 122);
+    padding: 10%;
+    /* flex: 1 1 0; */
+}
+#compet p{
+    text-align: center;
+    font-family: "Sun";
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 2em;
+}
 
 
 
@@ -257,9 +276,21 @@ body {
     height: 100%;
     padding-top: 10%;
     padding-bottom: 10%;
-    display: flex;
     border-bottom: 2px dashed;
+    display: flex;
 }
+
+#proj .pro1{
+    flex: 1 1 auto;
+    margin-right: 80px;
+    margin-left: 80px;
+    align-self: start;
+}
+
+
+
+
+
 
 #parco{
     width: 100%;
@@ -279,8 +310,21 @@ body {
     border-bottom: 2px dashed;
 }
 
-footer{
-    background-color: rgb(252, 252, 252);
+
+#footer{
+    bottom: 0;
+    height: 40%;
+    background-color: white;
+    display: block;
+}
+#footer p{
     width: 100%;
-    height: 100px;
+    text-align: center;
+    font-family: "coyote";
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+#footer img{
+    width: 11%;
 }
