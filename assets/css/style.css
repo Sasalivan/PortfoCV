@@ -129,8 +129,9 @@ body::-webkit-scrollbar {
     writing-mode: vertical-rl;
     text-orientation: upright;
     margin-left: 7%;
-    margin-right: 5%;
+    margin-right: 10%;
     text-align: center;
+    display: flex;
 }
 .Title h3{
     font-family: "coyote";
@@ -188,29 +189,28 @@ body::-webkit-scrollbar {
 
 #compet{
     width: 100%;
-    height: 900px;
+    height: auto;
     padding-top: 10%;
     padding-bottom: 10%;
     border-bottom: 2px dashed;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
+
 #compet .Back, .front, .design, .autre{
     flex: 1 1 auto;
-    margin-right: 80px;
-    margin-left: 80px;
     align-self: start;
+
 }
 
 #compet .front, .autre{
     flex: 1 1 auto;
-    margin-right: 80px;
-    margin-left: 80px;
     align-self: end;
 }
 
-#compet .Back, .front, .design, .autre, img{
-    max-width: 40%
+#compet img{
+    max-width: 50%
 }
 #compet .backText, .frontText, .designText, .autreText {
     width: 50%;
@@ -236,29 +236,26 @@ body::-webkit-scrollbar {
 
 #proj{
     width: 100%;
-    height: 900px;
+    height: auto;
     padding-top: 10%;
     padding-bottom: 10%;
     border-bottom: 2px dashed;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 #proj .proj1, .proj2, .proj3{
     flex: 1 1 auto;
-    margin-right: 80px;
-    margin-left: 80px;
     align-self: start;
 }
 
 #proj .proj2{
     flex: 1 1 auto;
-    margin-right: 80px;
-    margin-left: 80px;
     align-self: end;
 }
 
-#proj .proj1 .proj2, .proj3, img{
-    max-width: 50%;
+#proj img{
+    max-width: 40%;
 }
 #proj .descrip1, .descrip2, .descrip3{
     width: auto;
@@ -278,7 +275,7 @@ body::-webkit-scrollbar {
 
 #parco{
     width: 100%;
-    height: 900px;
+    height: auto;
     padding-top: 10%;
     padding-bottom: 10%;
     display: flex;
@@ -286,33 +283,35 @@ body::-webkit-scrollbar {
 }
 
 
+
+
 #contac{
     width: 100%;
-    height: 900px;
+    height: auto;
     padding-top: 10%;
     padding-bottom: 10%;
-    border-bottom: 2px dashed; 
+    border-bottom: 2px dashed;    
+    display: flex; 
+    flex-direction: row;  
 }
 
 #contac .lien{
-    display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-direction: column;
 }
 
-
-#contac .mail, .cv, .reseaux{
-    flex-wrap: wrap;
-}
-
-
-#contac img{
-    max-width: 50%;
+#contac .mail, .cv, .reseaux, img{
+    max-width: 58%;
+    margin-left: 300px;
 }
 #contac .mailien, .cvddl, .link{
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 20%;
     display: block;
+    background-color: rgb(221, 235, 247);
+    border: 5px solid ;
+    border-radius: 30px;
+    border-color: rgb(245, 155, 122);
 }
 #contac a{
     text-align: left;
@@ -322,6 +321,12 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     line-height: 2em;
+    padding: 10px;
+}
+
+#contac .link a img{
+    max-width: 40px;
+    
 }
 
 
