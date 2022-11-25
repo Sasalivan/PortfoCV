@@ -27,7 +27,7 @@ html{
     scroll-behavior: smooth; 
 }
 
-div .conteneur{
+#cont{
     width: 1903px;
     height: 900px;
 }
@@ -38,7 +38,7 @@ header{
     border-bottom: 7px solid rgb(0, 0, 0);
     background-color: rgb(255, 251, 246);
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 10px ;
     z-index:1;
@@ -288,22 +288,34 @@ body::-webkit-scrollbar {
 #contac{
     width: 100%;
     height: auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
     border-bottom: 2px dashed;    
     display: flex; 
-    flex-direction: row;  
+    flex-direction: row;
+    /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#contac .Title{
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 #contac .lien{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    margin-left: 200px;
 }
 
 #contac .mail, .cv, .reseaux, img{
-    max-width: 58%;
+    max-width: 50%;
     margin-left: 300px;
 }
+
+
+
 #contac .mailien, .cvddl, .link{
     width: 50%;
     height: 20%;
@@ -313,6 +325,12 @@ body::-webkit-scrollbar {
     border-radius: 30px;
     border-color: rgb(245, 155, 122);
 }
+
+#contac .reseaux, .link{
+    margin-left: 50px;
+}
+
+
 #contac a{
     text-align: left;
     font-family: "Sun";
@@ -354,14 +372,40 @@ body::-webkit-scrollbar {
 
 
 @media (max-width: 800px) {
-    #compet {
-      flex-direction: column;
-      max-width: 100%;
-      height: 100%;
+
+    #cont{
+        max-width: 800px;
     }
 
-.Title{
-    text-align: left;
-    writing-mode: horizontal-tb;
-}
+    header{
+        max-width: 800px;
+    }    
+    
+    #accueil{
+        max-width: 800px;
+        
+    }
+
+    #compet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      max-block-size: auto;
+    }
+
+    #proj{
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    #footer{
+        max-height: 16%;
+    }
+
+    .Title{
+        text-align: center;
+        writing-mode: horizontal-tb;
+    }
 }
