@@ -27,13 +27,9 @@ html{
     scroll-behavior: smooth; 
 }
 
-#cont{
-    width: 1903px;
-    height: 900px;
-}
 
 header{
-    width: 1903px;
+    width: 100%;
     height: 80px;
     border-bottom: 7px solid rgb(0, 0, 0);
     background-color: rgb(255, 251, 246);
@@ -86,7 +82,7 @@ body::-webkit-scrollbar {
 
 
 #accueil{
-    width: auto;
+    width: 100%;
     height: 900px;
     padding-bottom: 10%;
     border-bottom: 2px dashed;
@@ -142,7 +138,7 @@ body::-webkit-scrollbar {
 }
 
 #presenta{
-    width: 1903px;
+    width: auto;
     height: 900px;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -306,7 +302,7 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
-    margin-left: 200px;
+    
 }
 
 #contac .mail, .cv, .reseaux, img{
@@ -369,7 +365,11 @@ body::-webkit-scrollbar {
     width: 11%;
 }
 
-
+@media (max-width:1700px){
+    #presenta .pres2 .Text{
+        margin: -420px 0px 0px 301px;
+    }
+}
 
 @media (max-width: 800px) {
 
@@ -388,11 +388,12 @@ body::-webkit-scrollbar {
 
     #compet {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-      align-content: center;
-      max-block-size: auto;
+      flex:100%;
+      
+    }
+
+    #compet .backText, .frontText, .designText, .autreText {
+        margin-left: 10%;
     }
 
     #proj{
@@ -405,7 +406,7 @@ body::-webkit-scrollbar {
     }
 
     .Title{
-        text-align: center;
+        
         writing-mode: horizontal-tb;
     }
 }
