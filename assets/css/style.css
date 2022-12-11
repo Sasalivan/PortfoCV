@@ -350,7 +350,182 @@ body::-webkit-scrollbar {
     
 }
 
+::selection{
+    color: rgb(187, 38, 38);
+  }
+  #parco .wrapper{
+    width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  #parco .wrapper .center-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+  #parco .wrapper .row{
+    display: flex;
+  }
+  #parco .wrapper .row-1{
+    justify-content: flex-start;
+  }
+  #parco .wrapper .row-2{
+    justify-content: flex-end;
+  }
+  #parco .wrapper .row section{
+    background: #fff;
+    border-radius: 5px;
+    width: calc(45% - 5px);
+    padding: 20px;
+    position: relative;
+  }
+  #parco .wrapper .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+  }
+  #parco .row-1 section::before{
+    right: -7px;
+  }
+  #parco .row-2 section::before{
+    left: -7px;
+  }
+  #parco .row section .icon,
+  .center-line .scroll-icon{
+    position: absolute;
+    background: #f2f2f2;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #3ea0e2;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+  }
+  #parco .center-line .scroll-icon{
+    bottom: 0px;
+    left: 500%;
+    font-size: 250px;
+    transform: translateX(-50%);
+  }
+  #parco .row-1 section .icon{
+    top: 15px;
+    right: -85px;
+  }
+  #parco .row-2 section .icon{
+    top: 15px;
+    left: -85px;
+  }
+  #parco .row section .details,
+  #parco .row section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #parco .row section .details .title{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  #parco .row section p{
+    margin: 10px 0 17px 0;
+  }
+  #parco .row section .bottom a{
+    text-decoration: none;
+    background: #3ea0e2;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    /* font-size: 17px; */
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
 
+
+
+
+#contac{
+    width: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom: 2px dashed;
+    display: flex;    
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#contac .Title{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-left: 8%;
+    margin-right: 10%;
+    text-align: center;
+}
+#contac .Title h3{
+    font-family: "coyote";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5rem;  
+}
+#contac .bulleFull{
+    width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+#contac .bulleFull .row{
+    display: flex;
+}
+#contac .bulleFull .row-1{
+    justify-content: flex-start;
+}
+#contac .bulleFull .row-2{
+    justify-content: flex-end;
+    padding: 30px;
+}
+#contac .bulleFull .row section{
+    background: rgb(255, 255, 255);
+    border: 3px solid ;
+    border-radius: 30px;
+    border-color: #F8DB62;
+    width: calc(40% - 5px);
+    padding: 20px;
+    position: relative;
+}
+#contac .row section .icon{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+}
+/*espace des icons*/
+#contac .row-1 section .icon{
+    top: 15px;
+    right: 150px;
+}
+#contac .row-2 section .icon{
+    top: 15px;
+    left: 280px;
+}
+#contac .row section p{
+    margin: 10px 0 17px 0;
+    text-align: center;
+    font-family: "Sun";
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
 
 
 #footer{
